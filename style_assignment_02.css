@@ -1,0 +1,45 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #125D0D;
+    background-color: #ACD1AF;
+}
+
+.text {
+    max-width: 900px;
+    margin: auto;
+}
+
+.nav {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #125D0D;
+    background-color: #ACD1AF;
+    font-family: Arial;
+    list-style: none;
+}
+
+.nav_list {
+    display: inline;
+    padding: 30px;
+}
+
+body {
+    background-image: url('https://wallpapertag.com/wallpaper/full/9/8/7/890758-beautiful-forest-wallpaper-2560x1600-for-4k.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Verdana;
+}
