@@ -55,10 +55,9 @@ img {
 }
 
 body {
-    background-image: url('https://wallpapertag.com/wallpaper/full/9/8/7/890758-beautiful-forest-wallpaper-2560x1600-for-4k.jpg');
+    background:linear-gradient(0deg, rgba(96, 151, 92, 0.4), rgba(96, 151, 92, 0.4)), url('https://wallpapertag.com/wallpaper/full/9/8/7/890758-beautiful-forest-wallpaper-2560x1600-for-4k.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     font-family: Verdana;
-    background-blend-mode: overlay;
 }
