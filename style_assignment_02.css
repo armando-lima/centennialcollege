@@ -31,6 +31,24 @@ img {
     list-style: none;
 }
 
+.columns{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #125D0D;
+    background-color: #ACD1AF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+
+.column1{
+    width: 50%;
+    padding: 6px;
+    margin: 40px;
+}
+
 .nav_list {
     display: inline;
     padding: 30px;
@@ -42,4 +60,5 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: Verdana;
+    background-blend-mode: overlay;
 }
