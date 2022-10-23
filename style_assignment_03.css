@@ -1,8 +1,37 @@
+body {
+  background:linear-gradient(0deg, rgba(192, 192, 192, 0.4), rgba(192, 192, 192, 0.4)), url('images/assignment_03_background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Verdana;
+}
+
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+nav {
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(65, 65, 65);
+  background-color: rgb(139, 139, 139);
+  font-family: Arial;
+  list-style: none;
+}
+
+.nav_list {
+  display: inline;
+  padding: 30px;
+}
+
+table, th, td {
+  border: 1px solid black;
 }
 
 .content {
@@ -17,50 +46,6 @@ img {
 .text {
     max-width: 880px;
     margin: auto;
-}
-
-nav {
-    max-width: 980px;
-    margin: auto;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(65, 65, 65);
-    background-color: rgb(139, 139, 139);
-    font-family: Arial;
-    list-style: none;
-}
-
-.columns{
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(65, 65, 65);
-    background-color: rgba(192, 192, 192);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    flex-wrap: nowrap;
-}
-
-.column1{
-    width: 50%;
-    padding: 6px;
-    margin: 40px;
-}
-
-.nav_list {
-    display: inline;
-    padding: 30px;
-}
-
-
-body {
-    background:linear-gradient(0deg, rgba(192, 192, 192, 0.4), rgba(192, 192, 192, 0.4)), url('images/assignment_03_background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Verdana;
 }
 
 .grid-container {
@@ -97,10 +82,6 @@ body {
 .item6 {
     grid-column: 2;
     grid-row: 4;
-  }
-
-table, th, td {
-    border: 1px solid black;
   }
 
 .logo{

@@ -1,7 +1,32 @@
+body {
+    background:linear-gradient(0deg, rgba(96, 151, 92, 0.4), rgba(96, 151, 92, 0.4)), url('images/assignment_02_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Verdana;
+}
+
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+nav {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #125D0D;
+    background-color: rgba(114, 172, 118, 0.9);
+    font-family: Arial;
+    list-style: none;
+}
+
+.nav_list {
+    display: inline;
+    padding: 30px;
 }
 
 .content {
@@ -16,18 +41,6 @@ img {
 .text {
     max-width: 900px;
     margin: auto;
-}
-
-nav {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #125D0D;
-    background-color: rgba(114, 172, 118, 0.9);
-    font-family: Arial;
-    list-style: none;
 }
 
 .columns{
@@ -48,11 +61,6 @@ nav {
     margin: 40px;
 }
 
-.nav_list {
-    display: inline;
-    padding: 30px;
-}
-
 @keyframes anim 
 {
     from {opacity: 0%;}
@@ -62,13 +70,4 @@ nav {
 .fadein{
     animation-name: anim;
     animation-duration: 2s;
-}
-
-
-body {
-    background:linear-gradient(0deg, rgba(96, 151, 92, 0.4), rgba(96, 151, 92, 0.4)), url('images/assignment_02_background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: Verdana;
 }
