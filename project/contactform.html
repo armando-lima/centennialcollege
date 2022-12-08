@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Armando Lima - Home Page</title>
+    <link href="general_styling_sheet.css" rel="stylesheet">
+</head>
+
+<!-- Armando Lima -->
+
+<body>
+    <!-- <header> & <nav> -->
+    <div class="banner_nav">
+        <hr>
+        <img style="float:none" src="images/gingerbread_logo_transparent_cropped.png" alt="Gingerbread Logo"
+            width="auto" height="auto">
+        <header>
+            <h2>Gingerbread Realtor</h2>
+        </header>
+        <hr>
+        <nav>
+            <a class="nav_list" href="homepage.html">Home</a>
+            <a class="nav_list" href="realtor.html">Realtor</a>
+            <a class="nav_list" href="availableproperties.html">Properties</a>
+            <a class="nav_list" href="contactform.html">Contact</a>
+            <a class="nav_list" href="sitemap.html">Sitemap</a>
+        </nav>
+        <hr>
+    </div>
+    <main>
+        <div class="content">
+            <fieldset class="form_text">
+                <legend style="text-align: center;">
+                    <h1>Contact Us!</h1>
+                </legend><br>
+                <div>
+                    <form class="grid-container">
+                        <label for="fname"><b>First name</b><br><input type="text" name="fname"></label>
+                        <label for="lname"><b>Last name</b><br><input type="text" name="lname"></label>
+                        <label for="phone"><b>Phone number</b><br><input type="number" name="phone"></label>
+                        <label for="email"><b>E-mail</b><br><input type="email" name="email"></label>
+                        <label for="property_type"><b>Type of property:</b><br><select name="property_type">
+                                <option disabled selected value style="display: none">Click here to choose an
+                                    option.</option>
+                                <option value="house">House</option>
+                                <option value="condominium">Condominium</option>
+                            </select></label>
+                        <label for="bedroom"><b># of bedrooms</b><br><input type="number" name="bedroom" min="1"
+                                max="5"></label>
+                        <label for="bathroom"><b># of bathrooms</b><br><input type="number" name="bathroom" min="1"
+                                max="5"></label>
+                        <label for="price"><b>Maximum Price</b><br><input type="number" name="price" min="0"
+                                max="1500000"></label>
+                    </form>
+                    <br>
+                </div>
+                <div>
+                    <form>
+                        <label for="additional_comments">Additional Comments</label><br>
+                        <textarea style="width: 100%;" rows="4" cols="auto" name="additional_comments"
+                            form="additional_comments" placeholder="Enter text here..."></textarea><br>
+                    </form>
+                    <br>
+                </div>
+                <div>
+                    <form style="text-align: center;" action="mailto:contactus@gingerbread.ca" onclick="alert('Thank you for your interest. We will get back to you as soon as possible!')">
+                        <input style="width: 150px; height: 30px;" type="submit" value="Submit">
+                    </form>
+                </div>
+            </fieldset>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+            <p>Every content in this website is a fiction. Any similarity is mere coincidence.</p>
+            <p>&copy; Copyright of Armando Lima - Software Engineering Technician - Fall 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>

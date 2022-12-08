@@ -30,6 +30,11 @@ nav {
   padding: 30px;
 }
 
+footer {
+  text-align: center;
+  font-size: 75%;
+}
+
 table, th, td {
   border: 1px solid black;
 }

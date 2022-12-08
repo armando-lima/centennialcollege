@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Armando Lima - Home Page</title>
+    <link href="style_assignment_04.css" rel="stylesheet">
+</head>
+
+<!-- Armando Lima -->
+
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca/" target="_blank"><img class="content logo"
+                src="images/assignment_04_centennial_college_logo_v2.jpg" title="President's Choice" alt="Centennial College" width="100%"
+                height="100%"></a>
+        <div class="content">
+            <h1 style="text-align: center;">COMP 213 - 22F --Web Interface Design (SEC. 011) - Fall 2022</h1>
+            <h2 style="text-align: center;">Armando Lima</h2>
+    </header>
+    <nav>
+        <div>
+            <br>
+            <a class="nav_list" href="index.html">Home</a>
+            <a class="nav_list" href="assignments.html">Assignments</a>
+            <br><br>
+        </div>
+    </nav>
+    <main>
+        <div class="content">
+            <fieldset class="form_text">
+                <legend style="text-align: center;">
+                    <h1>Centennial College</h1>
+                    <h2>Continuing Education Course/Instructor Evaluation</h2>
+                </legend><br>
+                <div>
+                    <form>
+                        <fieldset class="grid-container">
+                            <label class="item1" for="fname"><b>Course Name/Code:</b></label>
+                            <input class="item2" type="text" id="coursename" name="coursename">
+                            <label class="item3" for="instructor"><b>Instructor</b></label>
+                            <input class="item4" type="text" id="instructor" name="instructor">
+                            <label class="item5" for="semester"><b>Semester:</b></label>
+                            <select class="item6" name="semester" id="semester">
+                                <option disabled selected value style="display: none">Click here to choose an
+                                    option.</option>
+                                <option value="fall">Fall</option>
+                                <option value="winter">Winter</option>
+                                <option value="spring/summer">Spring/Summer</option>
+                            </select>
+                            <label class="item7" for="monthyear"><b>Month/Year:</b></label>
+                            <input class="item8" type="month" id="monthyear" name="monthyear">
+                        </fieldset>
+                    </form>
+                    <br>
+                </div>
+                <div>
+                    <form>
+                        <fieldset class="grid-container">
+                            <legend class="form_text form_title"><b>Instructor</b></legend>
+                            <p class="item9" style="font-size:110%; text-align: center;"><b>How would you rate the
+                                    instructor's:</b></p>
+                            <label class="item2" for="knowledge">01. <b>Knowledge</b> of subject?</label>
+                            <div class="item5">
+                                <labeL><input type="radio" id="knowledge_excelent" name="knowledge"
+                                        value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="knowledge_good" name="knowledge"
+                                        value="Good">Good</labeL>
+                                <labeL><input type="radio" id="knowledge_fair" name="knowledge"
+                                        value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="knowledge_notsatisfactory" name="knowledge"
+                                        value="NotSatisfactory">Not
+                                    Satisfactory</labeL></div>
+                            <label class="item4" for="helpfulness">02. <b>Helpfulness</b>?</label>
+                            <div class="item7">
+                                <labeL><input type="radio" id="helpfulness_excelent" name="helpfulness"
+                                        value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="helpfulness_good" name="helpfulness"
+                                        value="Good">Good</labeL>
+                                <labeL><input type="radio" id="helpfulness_fair" name="helpfulness"
+                                        value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="helpfulness_notsatisfactory" name="helpfulness"
+                                        value="NotSatisfactory">Not
+                                    Satisfactory</labeL>
+                            </div>
+                            <label class="item6" for="respect">03. <b>Courtesy and respect</b> for all students?</label>
+                            <div class="item10">
+                                <labeL><input type="radio" id="courtesy_and_respect_excelent"
+                                        name="courtesy_and_respect" value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="courtesy_and_respect_good" name="courtesy_and_respect"
+                                        value="Good">Good</labeL>
+                                <labeL><input type="radio" id="courtesy_and_respect_fair" name="courtesy_and_respect"
+                                        value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="courtesy_and_respect_notsatisfactory"
+                                        name="courtesy_and_respect" value="NotSatisfactory">Not Satisfactory</labeL>
+                            </div>
+                            <label class="item8" for="communication">04. <b>Communication</b> skills?</label>
+                            <div class="item11">
+                                <labeL><input type="radio" id="communication_excelent" name="communication"
+                                        value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="communication_good" name="communication"
+                                        value="Good">Good</labeL>
+                                <labeL><input type="radio" id="communication_fair" name="communication"
+                                        value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="communication_notsatisfactory" name="communication"
+                                        value="NotSatisfactory">Not
+                                    Satisfactory</labeL>
+                            </div>
+                            <label class="item12" for="performance">05. Overall <b>performance</b>?</label>
+                            <div class="item13">
+                                <labeL><input type="radio" id="performance_excelent" name="performance"
+                                        value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="performance_good" name="performance"
+                                        value="Good">Good</labeL>
+                                <labeL><input type="radio" id="performance_fair" name="performance"
+                                        value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="performance_notsatisfactory" name="performance"
+                                        value="NotSatisfactory">Not
+                                    Satisfactory</labeL>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <br>
+                </div>
+                <div>
+                    <form>
+                        <fieldset class="grid-container">
+                            <legend class="form_text form_title"><b>Course</b></legend>
+                            <label class="item1" for="materials">06. How would you rate the <b>course
+                                    materials</b>?</label>
+                            <div class="item2">
+                                <labeL><input type="radio" id="course_materials_excelent" name="course_materials"
+                                        value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="course_materials_good" name="course_materials"
+                                        value="Good">Good</labeL>
+                                <labeL><input type="radio" id="course_materials_fair" name="course_materials"
+                                        value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="course_materials_notsatisfactory" name="course_materials"
+                                        value="NotSatisfactory">Not
+                                    Satisfactory</labeL>
+                            </div>
+                            <label class="item3" for="expectation">07. How much did this course meet your
+                                <b>expectation</b>?</label>
+                            <div class="item4">
+                                <labeL><input type="radio" id="expectation_excelent" name="expectation"
+                                        value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="expectation_good" name="expectation"
+                                        value="Good">Good</labeL>
+                                <labeL><input type="radio" id="expectation_fair" name="expectation"
+                                        value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="expectation_notsatisfactory" name="expectation"
+                                        value="NotSatisfactory">Not
+                                    Satisfactory</labeL>
+                            </div>
+                            <label class="item5" for="overall">08. How would you rate this course
+                                (<b>overall</b>)?</label>
+                            <div class="item6">
+                                <labeL><input type="radio" id="overall_excelent" name="overall"
+                                        value="Excelent">Excelent</labeL>
+                                <labeL><input type="radio" id="overall_good" name="overall" value="Good">Good</labeL>
+                                <labeL><input type="radio" id="overall_fair" name="overall" value="Fair">Fair</labeL>
+                                <labeL><input type="radio" id="overall_notsatisfactory" name="overall"
+                                        value="NotSatisfactory">Not
+                                    Satisfactory</labeL>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <br>
+                </div>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend class="form_text form_title"><b>General Information</b></legend>
+                            <label for="outline">09. Was the <b>course outline</b> reviewed/explained at the beginning
+                                of
+                                your
+                                course?</label><br>
+                                <label for="quantity">Choose a number between 1 and 5 (1 being the lowest grade and 5 being the highest grade):<br>
+                                <input type="number" id="quantity" name="course_outline" min="1" max="5"></label><br>
+                            <br>
+                            <label for="expectation">10. How much did this course meet your
+                                <b>expectation</b>?</label><br>
+                                <label for="quantity">Choose a number between 1 and 5 (1 being the lowest grade and 5 being the highest grade):<br>
+                                    <input type="number" id="quantity" name="course_outline" min="1" max="5"></label>
+                                <br>
+                        </fieldset>
+                    </form>
+                    <br>
+                </div>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend class="form_text form_title"><b>Any Other Comments</b></legend>
+                            <label for="besthing">11. What was the <b>best thing</b> about this course?</label><br>
+                            <textarea style="width: 100%;" rows="4" cols="auto" name="besthing" form="besthing"
+                                placeholder="Enter text here..."></textarea><br>
+                            <label for="improve">12. How could we <b>improve</b> this course?</label><br>
+                            <textarea style="width: 100%;" rows="4" cols="auto" name="improve" form="improve"
+                                placeholder="Enter text here..."></textarea><br>
+                            <label for="other">13. Other:</label><br>
+                            <textarea style="width: 100%;" rows="4" cols="auto" name="other" form="other"
+                                placeholder="Enter text here..."></textarea><br>
+                        </fieldset>
+                    </form>
+                    <br>
+                </div>
+                <div>
+                    <form style="text-align: center;">
+                        <input style="width: 150px; height: 30px;" type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="grid-container">
+                    <p class="item9" style="text-align: center; font-size: 120%"><b>Thank you! We pay attention to your
+                            feedback!</b></p>
+                    <p class="item2" style="text-align: center"><b>Web:</b> <a
+                            href="https://www.centennialcollege.ca/continuing_education">www.centennialcollege.ca/continuing_education</a>
+                    </p>
+                    <p class="item4" style="text-align: center"><b>Email:</b> <a
+                            href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a>
+                    </p>
+                </div>
+            </fieldset>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+            <p>&copy; Copyright of Armando Lima - Software Engineering Technician - Fall 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>
