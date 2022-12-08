@@ -29,6 +29,11 @@ nav {
     padding: 30px;
 }
 
+footer {
+    text-align: center;
+    font-size: 75%;
+}
+
 .content {
     max-width: 1000px;
     margin: auto;

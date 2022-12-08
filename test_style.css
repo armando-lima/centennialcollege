@@ -1,5 +1,4 @@
-body {
-    background-color: #cccccc;
+html{
     font-family: Arial;
 }
 
@@ -17,7 +16,6 @@ nav {
     border-style: solid;
     border-color: rgb(83, 81, 81);
     background-color: #b9b0b0;
-    font-family: Arial;
     list-style: none;
 }
         
@@ -26,9 +24,11 @@ nav {
     padding: 30px;
 }
 
-footer {
-    text-align: center;
-    font-size: 75%;
+table, th, td {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 400px;
 }
 
 .content {
@@ -38,9 +38,4 @@ footer {
     border-style: solid;
     border-color: rgb(83, 81, 81);
     background-color: #b9b0b0;
-}
-
-.text {
-    max-width: 900px;
-    margin: auto;
 }
