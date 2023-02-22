@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="midterm.css">
+    <script src="midterm.js"></script>
+</head>
+
+<body>
+    <!-- <header> & <nav> -->
+    <div class="banner_nav">
+        <br>
+        <img style="float:none" src="logo.png" alt="JS Logo" width="150px" height="150px">
+        <header>
+            <h1>Armando Lima</h1>
+        </header>
+        <nav>
+        </nav>
+    </div>
+
+    <main class="content">
+        <h2 style="text-align: center">
+            <span>Shipping Form</span>
+        </h2>
+        <h2 style="text-align: center">
+            <span>Please complete all the fields below</span>
+        </h2>
+        <form id="form">
+            <fieldset>
+                <legend style="text-align: left;">
+                    <h2>Billing Address</h2>
+                </legend>
+                <div class="grid-container">
+                    <label for="name">Name:<br><input type="text" id="name" required style="width: 300px"></label>
+                    <label for="address">Address:<br><input type="text" id="address" required
+                            style="width: 300px"></label>
+                    <label for="city">City:<br><input type="text" id="city" required style="width: 300px"></label>
+                    <label>Province: <br>
+                        <select class="label" id="province" required>
+                            <option disabled selected value style="display: none">Click here to choose an
+                                option.</option>
+                            <option value="ON">ON</option>
+                            <option value="QC">QC</option>
+                            <option value="NS">NS</option>
+                            <option value="NB">NB</option>
+                            <option value="MB">MB</option>
+                            <option value="BC">BC</option>
+                            <option value="PE">PE</option>
+                            <option value="SK">SK</option>
+                            <option value="AB">AB</option>
+                            <option value="NL">NL</option>
+                        </select></label>
+                    <label for="pcode">Postal Code:<br><input type="text" id="pcode" required style="width: 200px"
+                            pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}"
+                            placeholder="A0A0A0"></label>
+                    <label for="email">E-mail Address<br><input type="email" id="emailbox" required style="width: 300px"
+                            placeholder="sample@email.com"></label>
+                </div>
+                <br>
+                <div class="grid-container">
+                    <label for="sameAsBilling"><input type="checkbox" id="sameAsBilling" onclick="validateCheck()">Use
+                        same
+                        information as shipping address</label>
+                    <input type="reset" id="button" value="Clear Form" style="width:200px">
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <fieldset>
+            <legend style="text-align: left;">
+                <h2>Shipping Address</h2>
+            </legend>
+            <div id="shipping" class="grid-container">
+                <div id="nameSection">
+                    <h3>Name: </h3>
+                    <p id="shippingName"></p>
+                </div>
+
+                <div id="addressSection">
+                    <h3>Address: </h3>
+                    <p id="shippingAddress"></p>
+                </div>
+
+                <div id="citySection">
+                    <h3>City: </h3>
+                    <p id="shippingCity"></p>
+                </div>
+
+                <div id="provinceSection">
+                    <h3>Province: </h3>
+                    <p id="shippingProvince"></p>
+                </div>
+
+                <div id="postalCodeSection">
+                    <h3>Postal Code: </h3>
+                    <p id="shippingPostalCode"></p>
+                </div>
+
+                <div id="emailSection">
+                    <h3>Email address: </h3>
+                    <p id="shippingEmail"></p>
+                </div>
+            </div>
+        </fieldset>
+        <br>
+    </main>
+    <footer>
+        <div class="content">
+            <p>&copy; Copyright of Armando Lima - Client-Side Web Development - Winter 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
