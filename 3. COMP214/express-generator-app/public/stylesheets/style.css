@@ -1,0 +1,18 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  align-items: center;
+}
+
+.flex-container .box {
+  text-align: center;
+}

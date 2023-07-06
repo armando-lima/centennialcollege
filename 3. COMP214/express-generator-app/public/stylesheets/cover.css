@@ -1,0 +1,11 @@
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+}
+
+.cover-container {
+  /*max-width: 42em;*/
+  min-height: 100%;
+}
