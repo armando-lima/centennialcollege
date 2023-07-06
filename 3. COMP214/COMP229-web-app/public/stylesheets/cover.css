@@ -1,0 +1,16 @@
+/* @author:     Armando Lima  */
+/* @studentid:  301235438     */
+/* @date:       June 20, 2023 */
+/* @filename:   style.css     */
+
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+}
+
+.cover-container {
+  /*max-width: 42em;*/
+  min-height: 100%;
+}
