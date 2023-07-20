@@ -21,11 +21,6 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About me', body: 'Welcome to the About Me page'});
 });
 
-/* GET contact me page. */
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact me', body: 'Welcome to the Contact Me page'});
-});
-
 /* GET project page. */
 router.get('/portfolio', function(req, res, next) {
   res.render('portfolio', { title: 'Portfolio', body: 'Welcome to the Portfolio page'});

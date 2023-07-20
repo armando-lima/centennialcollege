@@ -19,7 +19,7 @@
     "micromatch": "^4.0.5",
     "mongoose": "^5.13.17",
     "morgan": "~1.9.1",
-    "nodemon": "^1.14.9",
+    "nodemon": "^1.19.4",
     "popper": "^1.0.1",
     "semver": "^7.5.3",
     "semver-diff": "^4.0.0"

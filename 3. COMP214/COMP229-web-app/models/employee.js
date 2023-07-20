@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-//Create Model of Product
+//Create Model of Employee
 let employeeModel = mongoose.Schema(
     {
         "name" : String,

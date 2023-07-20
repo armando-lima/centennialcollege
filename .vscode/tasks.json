@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "3. COMP214/angular-example-app/employee-management",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - 3. COMP214/angular-example-app/employee-management",
+			"detail": "ng build"
+		}
+	]
+}
