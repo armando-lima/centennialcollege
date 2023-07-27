@@ -1,8 +1,7 @@
-//Import libraries
-
 const express = require('express');
 const mongoose = require('mongoose');
 let routes = require('./routes/routes');
+const cors = require('cors');
 
 const app = express();
 const PORT = 4000;
@@ -32,3 +31,4 @@ function checkMongoDBConnection(error){
 
 app.use(express.json());
 app.use(routes);
+app.use(cors({origin: 'http://localhost:4200'}));
