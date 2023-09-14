@@ -1,0 +1,78 @@
+<%- include partials/header.ejs %>
+
+<div className="chatroom-container container container-body">
+  <div class="row chatcord-row">
+    <% if (loggedInUsername) { %>
+
+    <div class="left col-md-2 mb-2 mb-sm-0">
+      <div style="width: 100%; margin: auto">
+        <img
+          src="https://i1.wp.com/images.binaryfortress.com/General/UnknownUser1024.png?ssl=1"
+          alt=""
+          style="
+            width: 70px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 50%;
+            margin-top: 30px;
+          "
+        />
+        <h5 style="text-align: center; color: white; margin-top: 30px">
+          <%= loggedInUsername %>
+
+          <br />
+          <br />
+
+          <a href="/logout" style="color: white; font-size: 1rem">Logout</a>
+        </h5>
+      </div>
+    </div>
+    <div class="mid col-md-8 mb-3 mb-sm-0">
+      <div class="chat-area">
+        <% for (let i = 0; i < chatMessages.length - 1; i++) { %>
+        <div class="chat">
+          <span style="font-weight: bold"><%= chatMessages[i].username %></span>
+          <p style="margin: 0px"><%= chatMessages[i].comment %></p>
+          <p style="margin: 0px; text-align: right">
+            <%= chatMessages[i].date.toLocaleString() %>
+          </p>
+        </div>
+        <% } %>
+      </div>
+
+      <div class="input-area-div">
+        <input
+          type="text"
+          class="input-area"
+          placeholder="Type here..."
+          id="chat-input"
+        />
+        <button class="submit-btn" id="submit-btn">Submit</button>
+        <p style="margin: 0px; text-align: center">Be nice here :)</p>
+      </div>
+    </div>
+    <div class="right col-md-2 mb-3 mb-sm-0">
+      <p style="margin: 0px; text-align: center; color: white">Users</p>
+
+      <hr style="margin: 5px; color: white" />
+      <div>
+        <ul class="users" style="color: white">
+          <% for (let i = 0; i < users.length; i++) { %>
+          <li><%= users[i].username %></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+
+    <% } else { %>
+    <div class="col-md-12 text-center">
+      <p>
+        You are not logged in. Please <a href="/login">login</a> to access this
+        page.
+      </p>
+    </div>
+    <% } %>
+  </div>
+
+  <%- include partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>
+</div>

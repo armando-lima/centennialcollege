@@ -1,0 +1,65 @@
+<%- include partials/header.ejs %>
+
+<section class="">
+  <div
+    class="px-4 py-5 px-md-5 text-center text-lg-start"
+    style="background-color: hsl(0, 0%, 96%)"
+  >
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="my-5 display-3 fw-bold ls-tight">
+            The best platform <br />
+            <span class="text-primary">for chatting</span>
+          </h1>
+          <p style="color: hsl(217, 10%, 50.8%)">
+            This a demo version of Discord, let's login and chat with your
+            friends.
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card">
+            <div class="card-body py-5 px-md-5">
+              <!-- Login form -->
+              <form action="/login" method="post">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    name="email"
+                  />
+                  <label class="form-label" for="email">Email address</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    name="password"
+                  />
+                  <label class="form-label" for="password">Password</label>
+                </div>
+
+                <a href="/register">New user?</a>
+
+                <br />
+                <br />
+
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+
+<%- include partials/bottom_nav.ejs %> <%- include partials/footer.ejs %>
