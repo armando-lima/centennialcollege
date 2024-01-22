@@ -1,0 +1,62 @@
+<%- include('partials/header.ejs') %> <%- include('partials/top_nav.ejs') %>
+
+<link href="carousel.css" rel="stylesheet" />
+
+<style>
+  .image-cropper {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  img {
+    height: 100%;
+  }
+</style>
+
+<main>
+  <div class="container marketing">
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="image-cropper">
+          <img src="images/coding.avif" alt="Coding Picture" />
+        </div>
+        <h2 class="fw-normal">Front-end</h2>
+        <p>
+          I can work with HTML, CSS, JavaScript, and more. I can also code in
+          frameworks such as React, Angular, and Vue.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="image-cropper">
+          <img src="images/database.webp" alt="Coding Picture" />
+        </div>
+        <h2 class="fw-normal">Back-end</h2>
+        <p>
+            I can work in C#,
+            Java, Python, SQL, and more.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="image-cropper">
+          <img src="images/game.jpeg" alt="Coding Picture" />
+        </div>
+        <h2 class="fw-normal">Game Design</h2>
+        <p>
+          I can work with Unity, Unreal Engine, and more. I can help with level design, game mechanics, and more.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/bottom_nav.ejs') %> <%- include('partials/footer.ejs') %>
