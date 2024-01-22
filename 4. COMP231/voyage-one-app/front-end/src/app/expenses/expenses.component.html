@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="generator" content="Hugo 0.115.4" />
+    <title>Expense Recording - Voyage One</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Expense Recording</h1>
+    </header>
+
+    <section>
+      <h2>Record Your Expenses</h2>
+      <form>
+        <div>
+          <label for="expenseName">Expense Name:</label>
+          <input type="text" id="expenseName" name="expenseName" required />
+        </div>
+
+        <div>
+          <label for="expenseAmount">Expense Amount:</label>
+          <input type="number" id="expenseAmount" name="expenseAmount" required />
+        </div>
+
+        <div>
+          <label for="expenseCategory">Expense Category:</label>
+          <select id="expenseCategory" name="expenseCategory" required>
+            <option value="food">Food</option>
+            <option value="travel">Travel</option>
+            <option value="utilities">Utilities</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="expenseDate">Date of Expense:</label>
+          <input type="date" id="expenseDate" name="expenseDate" required />
+        </div>
+
+        <button type="submit" class="auth-btn">Record Expense</button>
+      </form>
+    </section>
+
+    <footer>
+      <p class="mt-5 mb-3 text-body-secondary">&copy; 2023 Voyage One. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
